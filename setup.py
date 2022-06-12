@@ -1,4 +1,5 @@
 import setuptools
+from setuptools import find_packages
 
 long_description = ""
 
@@ -11,7 +12,10 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://dstool.yao.sh",
-    packages=['dstool'],
+    package_dir={
+        "": "src"
+    },
+    packages=setuptools.find_packages(where="src"),
     license="MIT",
     classifiers=[
         "Programming Language :: Python :: 3",

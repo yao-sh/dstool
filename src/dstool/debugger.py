@@ -44,7 +44,6 @@ def stacktrace(func=None, exclude_files=['conda', 'miniconda3', 'Anaconda']):
 def traceclass(cls: type):
 
     def make_traced(cls: type, method_name: str, method: Callable):
-
         def traced_method(*args, **kwargs):
             print(f'--> Executing: {cls.__name__}::{method_name}()')
             return method(*args, **kwargs)
