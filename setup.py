@@ -5,7 +5,7 @@ long_description = ""
 
 setuptools.setup(
     name="dstool",
-    version="0.0.1",
+    version="0.0.2b",
     author="Xiaozhe Yao",
     author_email="askxzyao@gmail.com",
     description="Toolkit for Data Scientists",

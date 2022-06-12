@@ -11,3 +11,11 @@ def measure(func: Callable):
         print(f'Elapsed: {elapsed_sec:.3f} secs')
 
     return inner
+
+def repeat(n: int = 1):
+    def decorator(func: Callable):
+        def inner(*args, **kwargs):
+            for _ in range(n):
+                func(*args, **kwargs)
+        return inner
+    return decorator
