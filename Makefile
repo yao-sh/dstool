@@ -20,8 +20,8 @@ format:
 clean:
 	rm -rf build
 	rm -rf dist
-	rm -rf mlpm.egg-info
-
+	rm -rf dstool.egg-info
+	rm -rf src/dstool/dstool.egg-info
 build:
 	python3 setup.py sdist bdist_wheel
 
