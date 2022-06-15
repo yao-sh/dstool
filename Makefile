@@ -30,3 +30,6 @@ publish-test:
 
 publish:
 	twine upload dist/*
+	
+doc:
+	pdoc -d markdown --output-dir docs --docformat numpy  ./src
