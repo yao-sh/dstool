@@ -5,7 +5,7 @@ long_description = ""
 
 setuptools.setup(
     name="dstool",
-    version="0.0.2",
+    version="0.0.3",
     author="Xiaozhe Yao",
     author_email="askxzyao@gmail.com",
     description="Toolkit for Data Scientists",
@@ -30,7 +30,8 @@ setuptools.setup(
     ],
     install_requires=[
         "requests",
-        "loguru"
+        "loguru",
+        'pycouchdb',
     ],
     project_urls={
         "Bug Tracker": "https://github.com/yao-sh/dstool/issues",
