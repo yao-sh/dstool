@@ -3,3 +3,4 @@ build/
 dist/
 dstool.egg-info/
 .idea
+envs/.env
