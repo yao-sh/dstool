@@ -3,12 +3,16 @@ from typing import Callable
 
 from joblib import Parallel, delayed
 
+def chunks(lst, n):
+    """Yields successive n-sized chunks from lst."""
+    for i in range(0, len(lst), n):
+        yield lst[i:i + n]
 
 def parallel(func=None,
              args=(),
              merge_func=lambda x: x,
              parallelism=cpu_count()):
-
+    """Allocates tasks to multiple cores, by default it uses cpu_count() cores."""
     def decorator(func: Callable):
 
         def inner(*args, **kwargs):
