@@ -22,6 +22,7 @@ clean:
 	rm -rf dist
 	rm -rf dstool.egg-info
 	rm -rf src/dstool/dstool.egg-info
+	
 build:
 	python3 setup.py sdist bdist_wheel
 

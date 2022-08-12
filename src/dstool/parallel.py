@@ -3,7 +3,6 @@ from typing import Callable
 
 from joblib import Parallel, delayed
 
-
 def parallel(func=None,
              args=(),
              merge_func=lambda x: x,

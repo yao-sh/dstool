@@ -1,11 +1,10 @@
 import setuptools
-from setuptools import find_packages
 
 long_description = ""
 
 setuptools.setup(
     name="dstool",
-    version="0.0.3",
+    version="0.0.5",
     author="Xiaozhe Yao",
     author_email="askxzyao@gmail.com",
     description="Toolkit for Data Scientists",

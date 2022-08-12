@@ -2,7 +2,6 @@ from timeit import default_timer
 from typing import Callable
 import contextlib
 import joblib
-from tqdm import tqdm
 
 @contextlib.contextmanager
 def tqdm_joblib(tqdm_object):

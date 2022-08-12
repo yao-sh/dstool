@@ -5,7 +5,6 @@ from posixpath import join as urljoin
 
 import requests
 
-
 def push_r2(func=None):
 
     def inner(*args, **kwargs):
